@@ -8,7 +8,7 @@ console.log(path3);
 
 export const compress = async () => {
   const input = fs.createReadStream(path1, "utf-8");
-  const output = fs.createWriteStream(`${path2}/${path3}.br`);
+  const output = fs.createWriteStream(`${path2}/${path1}.gz`);
 
   const gzip = zlib.createBrotliCompress();
 
